@@ -11,7 +11,13 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME=""
 source "/tmp/LS_COLORS/lscolors.sh"
-alias vv ="nvim"
+alias vv='nvim'
+alias clear-terminal='clear'
+#alias snake=`python3`
+alias ginit="git init ."
+alias gadd="git add ."
+alias gc="git commit -m 'Committed changes, details in PR'"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -89,7 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-Preferred editor for local and remote sessions
+#Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
 else
